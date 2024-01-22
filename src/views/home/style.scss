@@ -1,0 +1,207 @@
+@import "../../assets/style/global/base.scss";
+
+#home {
+    background-image: url('../../assets/image/background.png');
+    background-repeat: no-repeat;
+    background-position: center -15px;
+    background-size: 100% auto;
+    
+    #search {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        align-content: center;
+        padding: 80px 0 120px 0;
+        .titleSearch {
+            text-align: center;
+            h2 {
+                font-size: 36px;
+                padding-bottom: 5px;
+            }
+            h3 {
+                font-size: 12px;
+                color: #3E3E3E;
+                padding-bottom: 30px;
+            }
+        }
+
+        .inputSearch {
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 12px;
+                top: 8px;
+                width: 18px;
+                height: 18px;
+                background-image: url('../../assets/image/search.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            input {
+                width: 326px;
+                height: 33px;
+                border-radius: 10px;
+                background: #F2F2F2;
+                border: 1px solid #D1D1D1;
+                padding: 10px 0 10px 35px;
+                font-size: 11px;
+                color: #717171;
+                margin-right: 10px;
+            }
+            button {    
+                width: 97px;
+                height: 33px;
+                background: #5AABB5;
+                text-align: center;
+                border-radius: 10px;
+                color: #fff;
+                padding: 3px;
+                font-size: 12px;
+                transition: 0.9s;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+
+        .preSelectSearch {
+            margin-top: 20px;
+            ul {
+                display: flex;
+                width: 445px;
+                justify-content: flex-start;
+                flex-direction: row; 
+                flex-wrap: wrap; 
+                align-content: center;
+                li {
+                    padding: 5px;
+                    a {
+                        display: block;
+                        padding: 5px;
+                        font-size: 11px;
+                        border-radius: 10px;
+
+                        border: 1px solid #D1D1D1;
+                        color: #C1C1C1;
+                    }
+                }
+            }
+        }
+
+        .smartSearchContent {
+            display: flex;
+            width: 445px;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 35px;
+            .separationLine {
+                display: block;
+                width: 100%;
+                text-align: center;
+                position: relative;
+                &::after, &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 35%;
+                    height: 1px;
+                    top: 8px;
+                    background: #ccc;
+                }
+                &::after {
+                    left: 0;
+                }
+                &::before {
+                    right: 0;
+                }
+                p {
+                    font-family: $font2;
+                    font-size: 15px;
+                    color: #3E3E3E;
+                }
+            }
+
+            .smartSearch {
+                display: block;
+                width: 100%;
+                text-align: center;
+                h2 {
+                    font-family: $font2;
+                    font-size: 12px;
+                    color: #3E3E3E;
+                    padding: 25px;
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                    background-color: #C90404;
+                    color: #fff;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    #employees {
+        h2 {
+            font-size: 15px;
+            color: #3E3E3E;
+            padding-bottom: 20px;
+        }
+        .employeesList {
+            display: flex;
+            justify-content: space-between; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            align-content: center;
+            .employee {
+                border: 1px solid #D9D9D9;
+                border-radius: 10px;
+                display: flex;
+                padding: 28px 36px;
+                background-color: #fff;
+                cursor: pointer;
+                width: 24%;
+                justify-content: center;
+                .employeeImage {
+                    padding-right: 20px;
+                    display: flex;
+                    justify-content: center;    
+                    flex-wrap: wrap; 
+                    align-content: center;
+                    .image {
+                        display: block;
+                        width: 54px;
+                        height: 54px;
+                        border-radius: 54px;
+                        background-color: #c3c3c3;
+                    }
+                }
+                .employeeInfo {
+                    display: flex;
+                    justify-content: space-between; 
+                    flex-direction: column; 
+                    flex-wrap: wrap; 
+                    align-content: center;
+                    h3 {
+                        font-size: 12px;
+                        color: #000;
+                    }
+                    ul {
+                        li {
+                            p {
+                                color: #555555;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

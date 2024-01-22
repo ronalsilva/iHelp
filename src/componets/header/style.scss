@@ -1,0 +1,74 @@
+@import "../../assets/style/global/base.scss";
+#header {
+    background-color: #5AABB5;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;    
+        flex-wrap: wrap; 
+        align-content: center;
+    }
+
+    .menuHeader {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap; 
+        align-content: center;
+        .logoHeader {
+            a {
+                h1 {
+                    font-size: 0;
+                    display: block;
+                    width: 62px;
+                    height: 39px;
+                    background-image: url("../../assets/image/logo.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+        ul {
+            display: flex;
+            padding: 12px 50px 0;
+            li {
+                a {
+                    display: block;
+                    padding: 0 30px;
+                    color: #fff;
+                    transition: .6s;
+                    font-family: $font1;
+                }
+            }
+        }
+    }
+
+    .loginHeader {
+        display: flex;
+        align-items: center;
+        a {
+            display: block;
+            color: #fff;
+            font-family: $font1;
+            font-size: 12px;
+            &.loginButton {
+                width: 93px;
+                background: #2D2D2D;
+                text-align: center;
+                border-radius: 10px;
+                color: #fff;
+                padding: 10px 0;
+                font-size: 12px;
+                transition: 0.7s;
+                font-weight: 600;
+                margin-left: 30px;
+                &:hover {
+                    opacity: .9;
+                }
+            }
+        }
+    }
+}

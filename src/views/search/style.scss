@@ -1,0 +1,68 @@
+@import "../../assets/style/global/base.scss";
+#searchPage {
+    padding-top: 50px;
+    .searchContent {
+        display: flex;
+        justify-content: space-between;
+        .searchBox {
+            display: block;
+            width: 30%;
+            padding-right: 20px;
+            .searchPreOption {
+                margin-top: 20px;
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        a {
+                            color: #000;
+                            font-size: 12px;
+                            font-family: $font2;
+                            border: 1px solid #ddd;
+                            border-radius: 10px;
+                            padding: 7px 10px;
+                            margin: 6px 0;
+                            display: block;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .searchtitle {
+                h3 {
+                    font-family: $font2;
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    border-radius: 10px;
+                    border: 1px solid #D1D1D1;
+                    padding: 10px 10px;
+                    font-size: 12px;
+                    margin: 10px 0;
+                }
+                button {
+                    width: 100%;
+                    background: #5AABB5;
+                    text-align: center;
+                    border-radius: 10px;
+                    color: #fff;
+                    padding: 10px;
+                    font-size: 12px;
+                    transition: 0.9s;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background: #000;
+                    }
+                }
+            }
+        }
+        .epmloyerList {
+            display: block;
+            width: 70%;
+        }
+    }
+}

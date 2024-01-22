@@ -1,0 +1,84 @@
+@import "../../assets/style/global/base.scss";
+.employerBox {
+    background: #EFEFEF;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    .employeeImage {
+        margin-right: 20px;
+        .image {
+            display: block;
+            width: 105px;
+            height: 105px;
+            background: #d1d1d1;
+            border-radius: 90px;
+            border-color: 1px solid #ccc;
+        }
+    }
+    .employeeData {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+
+        .favorite {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 0;
+            display: block;
+            width: 22px;
+            height: 22px;
+            background: url('../../assets/image/favorite1.png') no-repeat;
+            background-size: 100%;
+            transition: .5s;
+            &:hover {
+                background: url('../../assets/image/favorite-select.png') no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        .evaluation {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-family: $font2;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .employeeTitle {
+            h2 {
+                a {
+                    font-family: $font2;
+                    font-size: 14px;
+                    color: #000;
+                    padding-bottom: 5px;
+                }
+            }
+            p {
+                color: #555555;
+                font-family: $font2;
+                font-size: 12px;
+            }
+        }
+        .descript {
+            p {
+                width: 90%;
+                color: #555555;
+                font-family: $font2;
+                font-size: 12px;
+            }
+        }
+        .price {
+            p {
+                color: #5AABB5;
+                font-family: $font2;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}
