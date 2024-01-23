@@ -4,7 +4,7 @@
     padding: 40px 0;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     .wrapper {
         display: flex;
@@ -38,9 +38,9 @@
                 a {
                     display: block;
                     padding: 0 30px;
+                    font-family: $font2;
+                    font-size: 13px;
                     color: #fff;
-                    transition: .6s;
-                    font-family: $font1;
                 }
             }
         }
@@ -52,21 +52,21 @@
         a {
             display: block;
             color: #fff;
-            font-family: $font1;
-            font-size: 12px;
+            font-family: $font2;
+            font-size: 13px;
             &.loginButton {
                 width: 93px;
-                background: #2D2D2D;
+                background: #ffffff;
                 text-align: center;
                 border-radius: 10px;
-                color: #fff;
+                color: #000;
                 padding: 10px 0;
                 font-size: 12px;
-                transition: 0.7s;
+                transition: 0.2s;
                 font-weight: 600;
                 margin-left: 30px;
                 &:hover {
-                    opacity: .9;
+                    background: #dcdcdc;
                 }
             }
         }

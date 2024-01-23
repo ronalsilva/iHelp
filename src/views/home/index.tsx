@@ -59,6 +59,8 @@ const Home = () => {
 								<li><p>Pinter</p></li>
 							</ul>
 						</div>
+						<p className='evaluation'>4.5</p>
+						<a href="" className='favorite'>favorite</a>
 					</div>
 					<div className="employee">
 						<div className="employeeImage">
@@ -71,6 +73,8 @@ const Home = () => {
 								<li><p>Pinter</p></li>
 							</ul>
 						</div>
+						<p className='evaluation'>4.5</p>
+						<a href="" className='favorite'>favorite</a>
 					</div>
 					<div className="employee">
 						<div className="employeeImage">
@@ -83,6 +87,8 @@ const Home = () => {
 								<li><p>Pinter</p></li>
 							</ul>
 						</div>
+						<p className='evaluation'>4.5</p>
+						<a href="" className='favorite'>favorite</a>
 					</div>
 					<div className="employee">
 						<div className="employeeImage">
@@ -95,6 +101,8 @@ const Home = () => {
 								<li><p>Pinter</p></li>
 							</ul>
 						</div>
+						<p className='evaluation'>4.5</p>
+						<a href="" className='favorite'>favorite</a>
 					</div>
 				</div>
 			</div>

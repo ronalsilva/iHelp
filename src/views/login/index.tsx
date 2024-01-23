@@ -2,35 +2,28 @@ import React from 'react';
 import "./style.scss"
 
 const Login = () => {
-  return (
-    <div id='login'>
-        <div className="loginContent">
-            <div className="storeLogo">
-                <a href="/"><img src={require('../../assets/image/logo.png')} alt="Rent service" /></a>
+    return (
+        <section id='loginPage'>
+            <div className="logoHeader">
+                <a href="/"><h1>IHelp</h1></a>
             </div>
-            <div className="loginFormContent">
-                <div className="serverCode">
-                    <label htmlFor="servercode">Server code</label>
-                    <input type="text" id='servercode'/>
+            <div className="loginContent">
+                <h2>Log in:</h2>
+                <div className="formLogin">
+                    <input type="email" required id="emailLogin" placeholder='exemplo@exemplo.com'/>
+                    <input type="password" required id="passwordLogin" placeholder='******'/>
                     <button>Login</button>
                 </div>
-                <div className="loginForm">
-                    <div className="loginFormTitle">
-                        <h2>Welcome Back!</h2>
-                        <p>Login to manager your account</p>
-                    </div>
-                    <div className="loginFormInput">
-                        <label htmlFor="email">Email</label>
-                        <input type="text" id='email' />
-                        <label htmlFor="password">Password</label>
-                        <input type="password" id='password' />
-                        <button>Login</button>
-                    </div>
+                <div className="loginHelp">
+                    <a href="/">Forgot your password?</a>
+                    <a href="/createaccount">Create an account.</a>
                 </div>
             </div>
-        </div>
-    </div>
-  )
+            <div className="loginBanner">
+                <img src={require('../../assets/image/loginpage.png')} alt="Login iHelp" />
+            </div>
+        </section>
+    )
 }
 
 export default Login

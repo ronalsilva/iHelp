@@ -18,8 +18,8 @@ export const Header = () => {
             </div>
 
             <div className="loginHeader">
-                <a href="">Create account</a>
-                <a href="" className='loginButton'>Login</a>
+                <a href="/createaccount">Create account</a>
+                <a href="/login" className='loginButton'>Login</a>
             </div>
         </div>
     </section>

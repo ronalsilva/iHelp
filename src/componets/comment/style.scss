@@ -1,0 +1,52 @@
+@import "../../assets/style/global/base.scss";
+
+#commentBox {
+    background: #F5F6F9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    min-height: 231px;
+    margin-bottom: 35px;
+    .userInfo {
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+        .userPhoto {
+            margin-right: 10px;
+            .image {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                background-color: #ccc;
+            }
+        }
+        .userData {
+            h3 {
+                font-family: $font2;
+                font-size: 12px;
+            }
+            p {
+                font-size: 11px;
+                font-family: $font2;
+                color: #9C9CAC ;
+            }
+        }
+    }
+    .commentInfo {
+        .commentDate {
+            font-family: $font2;
+            font-size: 11px;
+            color: #9C9CAC;
+        }
+        .userComment {
+            padding-bottom: 10px;
+            p {
+                font-family: $font2;
+                font-size: 12px;
+                line-height: 20px;
+                color: #525164;
+            }
+        }
+    }
+}

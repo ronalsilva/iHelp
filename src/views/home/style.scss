@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center -15px;
     background-size: 100% auto;
+    margin-top: 118px;
     
     #search {
         display: flex;
@@ -20,7 +21,7 @@
                 padding-bottom: 5px;
             }
             h3 {
-                font-size: 12px;
+                font-size: 13px;
                 color: #3E3E3E;
                 padding-bottom: 30px;
             }
@@ -32,39 +33,40 @@
                 content: "";
                 display: block;
                 position: absolute;
-                left: 12px;
-                top: 8px;
-                width: 18px;
-                height: 18px;
+                left: 11px;
+                top: 10px;
+                width: 22px;
+                height: 22px;
                 background-image: url('../../assets/image/search.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
             input {
                 width: 326px;
-                height: 33px;
                 border-radius: 10px;
                 background: #F2F2F2;
                 border: 1px solid #D1D1D1;
-                padding: 10px 0 10px 35px;
-                font-size: 11px;
+                padding: 13px 0 13px 35px;
+                font-size: 12px;
                 color: #717171;
                 margin-right: 10px;
+                font-family: $font2;
             }
             button {    
                 width: 97px;
-                height: 33px;
+                height: 40px;
                 background: #5AABB5;
                 text-align: center;
                 border-radius: 10px;
                 color: #fff;
                 padding: 3px;
+                font-family: $font2;
                 font-size: 12px;
-                transition: 0.9s;
                 border: none;
                 cursor: pointer;
+                transition: .2s;
                 &:hover {
-                    background: #000;
+                    background-color: #69b4bd;
                 }
             }
         }
@@ -83,11 +85,11 @@
                     a {
                         display: block;
                         padding: 5px;
-                        font-size: 11px;
+                        font-size: 12px;
                         border-radius: 10px;
-
                         border: 1px solid #D1D1D1;
                         color: #C1C1C1;
+                        font-family: $font2;
                     }
                 }
             }
@@ -132,17 +134,19 @@
                 text-align: center;
                 h2 {
                     font-family: $font2;
-                    font-size: 12px;
+                    font-size: 14px;
                     color: #3E3E3E;
-                    padding: 25px;
+                    padding: 25px 0 35px 0;
                 }
                 a {
                     display: block;
                     width: 100%;
-                    background-color: #C90404;
+                    background-color: #c90404c9;
                     color: #fff;
                     border-radius: 10px;
-                    padding: 10px;
+                    padding: 13px;
+                    font-size: 13px;
+                    font-family: $font2;
                 }
             }
         }
@@ -152,6 +156,7 @@
             font-size: 15px;
             color: #3E3E3E;
             padding-bottom: 20px;
+            font-family: $font2;
         }
         .employeesList {
             display: flex;
@@ -163,11 +168,35 @@
                 border: 1px solid #D9D9D9;
                 border-radius: 10px;
                 display: flex;
-                padding: 28px 36px;
+                padding: 20px 20px;
                 background-color: #fff;
                 cursor: pointer;
                 width: 24%;
-                justify-content: center;
+                position: relative;
+                .evaluation {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 20px;
+                    font-family: $font2;
+                    font-size: 11px;
+                    font-weight: bold;
+                }
+                .favorite {
+                    position: absolute;
+                    top: 15px;
+                    right: 18px;
+                    font-size: 0;
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    background: url('../../assets/image/favorite1.png') no-repeat;
+                    background-size: 100%;
+                    transition: .5s;
+                    &:hover {
+                        background: url('../../assets/image/favorite-select.png') no-repeat;
+                        background-size: 100%;
+                    }
+                }
                 .employeeImage {
                     padding-right: 20px;
                     display: flex;
@@ -191,12 +220,14 @@
                     h3 {
                         font-size: 12px;
                         color: #000;
+                        font-family: $font2;
                     }
                     ul {
                         li {
                             p {
                                 color: #555555;
                                 font-size: 10px;
+                                font-family: $font2;
                             }
                         }
                     }

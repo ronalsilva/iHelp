@@ -1,9 +1,8 @@
 @import "../../assets/style/global/base.scss";
 
-#loginPage {
+#createAccountPage {
     display: flex;
     height: 100vh;
-    position: relative;
     .logoHeader {
         position: absolute;
         top: 20px;
@@ -20,7 +19,7 @@
             }
         }
     }
-    .loginContent {
+    .createAccountContent {
         width: 40%;
         height: 100vh;
         display: flex;
@@ -34,7 +33,7 @@
             color: #000;
             padding: 30px 0 50px 0;
         }
-        .formLogin {
+        .formAccount {
             display: flex;
             flex-direction: column;
             input {

@@ -1,6 +1,7 @@
 import { Header } from "../../componets/header"
 import { Footer } from "../../componets/footer"
 import { CarouselContent } from "../../componets/carousel"
+import { Comments } from "../../componets/comment"
 import "./style.scss";
 import { useState } from "react";
 
@@ -72,6 +73,22 @@ Diam maecenas sed enim ut sem viverra aliquet eget sit. Morbi enim nunc faucibus
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. A arcu cursus vitae congue. Mattis pellentesque id nibh tortor id aliquet lectus. Nunc aliquet bibendum enim facilisis gravida. Molestie nunc non blandit massa enim nec dui. Tristique magna sit amet purus gravida. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Risus viverra adipiscing at in tellus integer feugiat. Sit amet porttitor eget dolor morbi. Vitae tortor condimentum lacinia quis vel eros. </p>
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<div className="commetsContent">
+					<div className="commetsTitle">
+						<h4>Comments:</h4>
+					</div>
+					<div className="usersComments">
+						<Comments />
+						<Comments />
+						<Comments />
+						<Comments />
+						<Comments />
+						<Comments />
+						<Comments />
+						<Comments />
 					</div>
 				</div>
 			</div>
