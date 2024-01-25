@@ -1,16 +1,34 @@
 @import "../../assets/style/global/base.scss";
 #searchPage {
     margin-top: 168px;
+    @media only screen and (max-width: $medium) { 
+        margin-top: 128px;
+    }
     .searchContent {
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: $medium) { 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
         .searchBox {
             display: block;
             width: 30%;
             padding-right: 20px;
+            @media only screen and (max-width: $medium) { 
+                width: 100%;
+                margin-bottom: 40px;
+                padding-right: 0;
+            }
             .searchPreOption {
                 margin-top: 20px;
                 ul {
+                    @media only screen and (max-width: $medium) { 
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
                     li {
                         display: inline-block;
                         margin-right: 10px;
@@ -63,6 +81,9 @@
         .epmloyerList {
             display: block;
             width: 70%;
+            @media only screen and (max-width: $medium) { 
+                width: 100%;
+            }
         }
     }
 }

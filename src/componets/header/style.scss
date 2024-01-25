@@ -6,6 +6,9 @@
     top: 0;
     z-index: 3;
     width: 100%;
+    @media only screen and (max-width: $medium) { 
+        padding: 20px 0;
+    }
     .wrapper {
         display: flex;
         justify-content: space-between;    
@@ -34,6 +37,9 @@
         ul {
             display: flex;
             padding: 12px 50px 0;
+            @media only screen and (max-width: $medium) { 
+                display: none;
+            }
             li {
                 a {
                     display: block;
@@ -49,6 +55,9 @@
     .loginHeader {
         display: flex;
         align-items: center;
+        @media only screen and (max-width: $medium) { 
+            display: none;
+        }
         a {
             display: block;
             color: #fff;
@@ -68,6 +77,80 @@
                 &:hover {
                     background: #dcdcdc;
                 }
+            }
+        }
+    }
+
+    .mobileMenu {
+        display: none;
+        @media only screen and (max-width: $medium) { 
+            display: flex;
+            align-items: center;
+        }
+        .iconMenu {
+            width: 30px;
+        }
+        #menuContentMobile {
+            display: none;
+            position: fixed;
+            z-index: 4;
+            background: #fff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            transition: .2s;
+            .logoHeaderMobile {
+                padding: 20px;
+                a {
+                    h1 {
+                        font-size: 0;
+                        display: block;
+                        width: 62px;
+                        height: 39px;
+                        background-image: url("../../assets/image/logo-blue.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+            ul {
+                border-top: 1px solid #ccc;
+                li {
+                    display: block;
+                    width: 100%;
+                    &.loginMobile {
+                        display: flex;
+                        text-align: center;
+                        a {
+                            &:first-child {
+                                border-right: 1px solid #ccc;
+                                color: #5AABB5;
+                            }
+                        }
+                    }
+                    a {
+                        display: block;
+                        width: 100%;
+                        font-family: $font2;
+                        font-size: 12px;
+                        padding: 20px;
+                        color: #000;
+                        font-weight: 500;
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+            }
+            &.active {
+                display: block;
+            }
+            .closeMenu {
+                display: block;
+                width: 30px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                transform: rotate(45deg);
             }
         }
     }

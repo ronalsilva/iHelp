@@ -27,6 +27,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: $small) { 
+            width: 100%;
+        }
         h2 {
             font-family: $font2;
             font-size: 20px;
@@ -42,6 +45,9 @@
                 border-bottom: 2px solid #5AABB5;
                 margin-bottom: 40px;
                 padding: 10px;
+                @media only screen and (max-width: $small) { 
+                    width: 250px;
+                }
             }
             button {
                 width: 300px;
@@ -56,6 +62,9 @@
                 margin-top: 10px;
                 cursor: pointer;
                 transition: .2s;
+                @media only screen and (max-width: $small) { 
+                    width: 250px;
+                }
                 &:hover {
                     background-color: #69b4bd;
                 }
@@ -66,6 +75,9 @@
             flex-direction: column;
             padding-top: 40px;
             width: 300px;
+            @media only screen and (max-width: $small) { 
+                width: 250px;
+            }
             a {
                 font-family: $font2;
                 font-size: 12px;
@@ -83,6 +95,9 @@
         align-content: center;
         background: #F5F5F5;
         border-left: 1px solid #ccc;
+        @media only screen and (max-width: $small) { 
+            display: none;
+        }
         img {
             display: block;
             width: 75%;
