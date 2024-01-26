@@ -1,10 +1,15 @@
 @import "../../assets/style/global/base.scss";
-#header {
-    background-color: #5AABB5;
-    padding: 40px 0;
+
+#headerBox {
     position: fixed;
     top: 0;
     z-index: 3;
+    width: 100%;
+}
+
+#header {
+    background-color: #5AABB5;
+    padding: 40px 0;
     width: 100%;
     @media only screen and (max-width: $medium) { 
         padding: 20px 0;
@@ -151,6 +156,32 @@
                 top: 20px;
                 right: 20px;
                 transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+#setLocation {
+    display: flex;
+    width: 100%;
+    background: #f3f3f3;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e3e3e3;
+    .locationContent {
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $font2;
+            font-size: 13px;
+            span {
+                width: 15px;
+                height: 15px;
+                background-image: url('../../assets/image/location-icon.png');
+                background-size: 100%;
+                margin-right: 5px;
             }
         }
     }

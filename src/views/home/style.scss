@@ -3,7 +3,7 @@
 #home {
     background-image: url('../../assets/image/background.png');
     background-repeat: no-repeat;
-    background-position: center -15px;
+    // background-position: center -15px;
     background-size: 100% auto;
     margin-top: 118px;
     @media only screen and (max-width: $large) { 
@@ -20,7 +20,7 @@
         flex-direction: column; 
         flex-wrap: wrap; 
         align-content: center;
-        padding: 80px 0 120px 0;
+        padding: 120px 0;
         @media only screen and (max-width: $small) { 
             padding-bottom: 50px;
         }
